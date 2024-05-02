@@ -29,7 +29,7 @@ async def process_help_command(message: Message):
 # кроме команд "/start" и "/help"
 @dp.message()
 async def send_echo(message: Message):
-    await message.reply('Попробуй еще раз')
+    await message.reply('Попробуй еще раз зачем пишешь'=message.text)
 
 
 if __name__ == '__main__':
