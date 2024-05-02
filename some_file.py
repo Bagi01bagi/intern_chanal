@@ -3,7 +3,7 @@ from aiogram.filters import Command
 from aiogram.types import Message
 
 # Вместо BOT TOKEN HERE нужно вставить токен вашего бота, полученный у @BotFather
-BOT_TOKEN = 'BOT TOKEN HERE'
+BOT_TOKEN = '6986394476:AAHNPYiT48AVcqjNBnyvUfX8shkKdh67xr8'
 
 # Создаем объекты бота и диспетчера
 bot = Bot(token=BOT_TOKEN)
@@ -29,7 +29,7 @@ async def process_help_command(message: Message):
 # кроме команд "/start" и "/help"
 @dp.message()
 async def send_echo(message: Message):
-    await message.reply(text=message.text)
+    await message.reply('Попробуй еще раз')
 
 
 if __name__ == '__main__':
